@@ -13,6 +13,7 @@ import ProjectImg1 from "../assets/projects/car-rental.jpg";
 import ProjectImg2 from "../assets/projects/restaurant.jpg";
 import ProjectImg3 from "../assets/projects/ecommerce.jpg";
 import ProjectImg4 from "../assets/projects/travel-website.jpg";
+import Experience from "./pages/Experince/Experince.jsx";
 
 const ProjectData = [
   {
@@ -47,7 +48,7 @@ function MyBook(props) {
   return (
     <HTMLFlipBook width={600} height={700} showCover="true">
       <Page number={1}>
-        <Cover coverImg={coverImg} title="My Portfolio" />
+        <Cover coverImg={coverImg} title="PORTFOLIO" />
       </Page>
       <Page number={2}>
         <FirstPage />
@@ -56,18 +57,24 @@ function MyBook(props) {
         <Skills />
       </Page>
       <Page number={4}>
-        <Services />
+        <Experience />
       </Page>
       <Page number={5}>
-        <About />
+        <Services />
       </Page>
       <Page number={6}>
-        <Projects ProjectData={ProjectData} />
+        
       </Page>
       <Page number={7}>
-        <Projects ProjectData={ProjectData2} />
+        <About />
       </Page>
       <Page number={8}>
+        <Projects ProjectData={ProjectData} />
+      </Page>
+      <Page number={9}>
+        <Projects ProjectData={ProjectData2} />
+      </Page>
+      <Page number={10}>
         <Cover coverImg={EndImg} title="Thanks" />
       </Page>
     </HTMLFlipBook>

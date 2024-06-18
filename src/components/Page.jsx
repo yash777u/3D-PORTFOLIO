@@ -1,5 +1,6 @@
 import React, { forwardRef } from "react";
 
+// eslint-disable-next-line react/display-name
 const Page = forwardRef((props, ref) => {
   return (
     <div className="demoPage bg-white" ref={ref}>
