@@ -49,7 +49,7 @@ function MyBook(props) {
   return (
     <HTMLFlipBook width={600} height={700} showCover="true">
       <Page number={1}>
-        <Cover coverImg={coverImg} title="PORTFOLIO" />
+        <Cover coverImg={coverImg} title="" />
       </Page>
       <Page number={2}>
         <FirstPage />
@@ -76,7 +76,7 @@ function MyBook(props) {
         <Projects ProjectData={ProjectData2} />
       </Page>
       <Page number={10}>
-        <Cover coverImg={EndImg} title="Thanks" />
+        <Cover coverImg={EndImg} title="" />
       </Page>
     </HTMLFlipBook>
   );

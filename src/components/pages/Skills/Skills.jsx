@@ -13,6 +13,7 @@ import { SiKubernetes } from "react-icons/si";
 import { VscTerminalLinux } from "react-icons/vsc";
 import { FaDocker } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
+import Heading from "../../HelperComp/Heading";
 
 const Skills = () => {
   return (
@@ -20,13 +21,8 @@ const Skills = () => {
       <div>
         {/* heading */}
         <div>
-          <div className="relative">
-            <div className="text-center text-6xl xl:text-8xl font-bold text-black/5">
-              SKILLS
-            </div>
-            <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl">
-              Skills
-            </h1>
+          <div className="pt-9 pb-3">
+            <Heading title="Skills" />
           </div>
         </div>
         {/* skills section */}
@@ -107,8 +103,6 @@ const Skills = () => {
             <span className="mt-2 text-lg">React</span>
           </div>
         </div>
-
-
       </div>
     </div>
   );

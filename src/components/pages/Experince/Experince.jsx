@@ -1,6 +1,7 @@
 import React from 'react';
 import sapLogo from '../../../assets/saplabs.png'; 
 import iintmLogo from '../../../assets/iintm.jpeg';
+import Heading from "../../HelperComp/Heading";
 // Adjust the path as per your directory structure
 
 const Experience = () => {
@@ -23,14 +24,9 @@ const Experience = () => {
     <div className="h-full bg-white px-10 py-6">
       <div>
         {/* Heading */}
-        <div className="relative mb-10">
-          <div className="text-center text-6xl xl:text-8xl font-bold text-black/5">
-            EXPERIENCE
+        <div className="pt-9 pb-3">
+            <Heading title="Experince" />
           </div>
-          <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl">
-            Experience
-          </h1>
-        </div>
         {/* Experience Section */}
         <div className="space-y-10">
           {experiences.map((experience, index) => (
