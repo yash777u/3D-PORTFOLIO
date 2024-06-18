@@ -14,6 +14,7 @@ import ProjectImg2 from "../assets/projects/restaurant.jpg";
 import ProjectImg3 from "../assets/projects/ecommerce.jpg";
 import ProjectImg4 from "../assets/projects/travel-website.jpg";
 import Experience from "./pages/Experince/Experince.jsx";
+import Certificate from "./pages/Certificates/Certificate.jsx";
 
 const ProjectData = [
   {
@@ -63,7 +64,7 @@ function MyBook(props) {
         <Services />
       </Page>
       <Page number={6}>
-        
+        <Certificate />
       </Page>
       <Page number={7}>
         <About />
