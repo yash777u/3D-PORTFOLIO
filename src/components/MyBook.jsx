@@ -9,39 +9,39 @@ import Services from "./pages/Services/Services";
 import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects.jsx";
 
-import ProjectImg1 from "../assets/projects/car-rental.jpg";
-import ProjectImg2 from "../assets/projects/restaurant.jpg";
-import ProjectImg3 from "../assets/projects/ecommerce.jpg";
-import ProjectImg4 from "../assets/projects/travel-website.jpg";
+import ProjectImg1 from "../assets/projects/cric.png";
+import ProjectImg2 from "../assets/projects/ecom.png";
+import ProjectImg3 from "../assets/projects/python.png";
+import ProjectImg4 from "../assets/projects/window11.png";
 import Experience from "./pages/Experince/Experince.jsx";
 import Certificate from "./pages/Certificates/Certificate.jsx";
 
 const ProjectData = [
   {
-    name: "Car Rental website",
-    description: "Complete Responsive website using React js and Tailwind CSS",
+    name: "Cricbuzz unofficial",
+    description: "Cricbuzz - a sophisticated Cricket Application!",
     image: ProjectImg1,
-    previewLink: "https://car-rental-tcj.netlify.app/",
+    previewLink: "https://github.com/yash777u/cricbuzz-frontend",
   },
   {
-    name: "Restaurant website",
-    description: "Complete Responsive website using React js and Tailwind CSS",
+    name: "Ecommerce website",
+    description: "myCart - Ecommerce Web Application ",
     image: ProjectImg2,
-    previewLink: "https://foodies-zone.netlify.app/",
+    previewLink: "https://github.com/yash777u/myCart",
   },
 ];
 const ProjectData2 = [
   {
-    name: "Ecommerce website",
-    description: "Complete Responsive website using React js and Tailwind CSS",
+    name: "Insta Automation",
+    description: "Python Script to Automate your Instagram",
     image: ProjectImg3,
-    previewLink: "https://shopsy-tcj.netlify.app/",
+    previewLink: "https://github.com/yash777u/Python-Automation-Upload-Post",
   },
   {
-    name: "Travel website",
-    description: "Complete Responsive website using React js and Tailwind CSS",
+    name: "Window 11 Clone",
+    description: "Javascript, CSS and Html Window 11 Ui Clone",
     image: ProjectImg4,
-    previewLink: "https://travel-tcj.netlify.app/",
+    previewLink: "https://github.com/yash777u/window-11-clone",
   },
 ];
 

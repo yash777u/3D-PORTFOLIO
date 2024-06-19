@@ -62,8 +62,9 @@ const Skills = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <FaJava size={70} style={{ color: "#f89820" }} />
-            <span className="mt-2 text-lg">Java</span>
+            <FaReact size={70} color="#61dbfb" />{" "}
+            {/* Using an icon from react-icons */}
+            <span className="mt-2 text-lg">React</span>
           </div>
 
           <div className="flex flex-col items-center">
@@ -80,7 +81,7 @@ const Skills = () => {
             <span className="mt-2 text-lg">PostgreSQL</span>
           </div>
           <div className="flex flex-col items-center">
-            <SiKubernetes size={70} style={{ color: "#48b6fa" }} />
+            <SiKubernetes size={70} style={{ color: "#3970e4 " }} />
             <span className="mt-2 text-lg">Kubernates</span>
           </div>
 
@@ -92,15 +93,6 @@ const Skills = () => {
           <div className="flex flex-col items-center">
             <FaDocker size={70} style={{ color: "#31a3ea" }} />
             <span className="mt-2 text-lg">Docker </span>
-          </div>
-        </div>
-
-        {/* 4td line skills */}
-        <div className="flex justify-center space-x-10 mt-10">
-          <div className="flex flex-col items-center">
-            <FaReact size={70} color="#61dbfb" />{" "}
-            {/* Using an icon from react-icons */}
-            <span className="mt-2 text-lg">React</span>
           </div>
         </div>
       </div>
