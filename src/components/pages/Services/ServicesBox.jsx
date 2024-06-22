@@ -1,32 +1,32 @@
 import React from "react";
-import { AiFillLayout } from "react-icons/ai";
-import { MdOutlinePhoneAndroid } from "react-icons/md";
-import { HiMiniComputerDesktop } from "react-icons/hi2";
-import { MdSecurity } from "react-icons/md";
+import { VscCircuitBoard } from "react-icons/vsc";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaScrewdriverWrench } from "react-icons/fa6";
+import { FaShareNodes } from "react-icons/fa6";
 
 const ServicesData = [
   {
-    name: "UX research",
-    description: "Lorem ipsum dolor sit amet.",
-    icon: <AiFillLayout className="text-4xl" />,
+    name: "Web Application Development",
+    description: "Responsive, high-performance web applications tailored to your needs.",
+    icon: <FaLaptopCode className="text-4xl" />,
     bgColor: "bg-blue-500/70",
   },
   {
-    name: "App Development",
-    description: "Lorem ipsum dolor sit.",
-    icon: <MdOutlinePhoneAndroid className="text-4xl" />,
+    name: "Backend Development",
+    description: "Building scalable, secure backend systems with robust APIs and database integrations to power your applications",
+    icon: <VscCircuitBoard className="text-4xl" />,
     bgColor: "bg-lime-500/70",
   },
   {
-    name: "Web App Development",
-    description: "Lorem ipsum dolor sit amet.",
-    icon: <HiMiniComputerDesktop className="text-4xl" />,
+    name: "API Development and Integration",
+    description: "Connect applications with third-party services for seamless communication.",
+    icon: <FaShareNodes className="text-4xl" />,
     bgColor: "bg-fuchsia-500/70",
   },
   {
-    name: "Security",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-    icon: <MdSecurity className="text-4xl" />,
+    name: "Maintenance and Support",
+    description: "Provide maintenance and support to keep applications running smoothly and up-to-date.",
+    icon: <FaScrewdriverWrench className="text-4xl" />,
     bgColor: "bg-orange-500/70",
   },
 ];

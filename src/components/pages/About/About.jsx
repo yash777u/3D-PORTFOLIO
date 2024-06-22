@@ -1,14 +1,13 @@
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { IoIosMail } from "react-icons/io";
-import Heading from "../../HelperComp/Heading";
-import { FaGithub } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 import { BsTwitterX } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import Heading from "../../HelperComp/Heading";
 
 const About = () => {
-  const handleLinkClick = (e) => {
-    e.stopPropagation();
+  const handleLinkClick = (url) => {
+    window.open(url, "_blank");
   };
 
   return (
@@ -34,49 +33,52 @@ const About = () => {
 
         {/* Social Links */}
         <div className="flex space-x-4 mt-10">
-          <a
-            href="mailto:yogesh.kumar.02@proton.me"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
             className="social-btn"
-            onClick={handleLinkClick}
+            onClick={() =>
+              handleLinkClick("https://leetcode.com/u/yash777u/")
+            }
           >
-            <IoIosMail size={55} color="#67686b" />
-          </a>
-          <a
-            href="https://www.instagram.com/your-instagram-profile"
-            target="_blank"
-            rel="noopener noreferrer"
+            <SiLeetcode size={55} color="#67686b" />
+          </button>
+          <button
             className="social-btn"
-            onClick={handleLinkClick}
+            onClick={() =>
+              handleLinkClick("https://x.com/yogesh_kumar_02")
+            }
           >
             <BsTwitterX size={48} color="#67686b" />
-          </a>
-          <a
-            href="https://github.com/yash777u"
-            target="_blank"
-            rel="noopener noreferrer"
+          </button>
+          <button
             className="social-btn"
-            onClick={handleLinkClick}
+            onClick={() =>
+              handleLinkClick("https://github.com/yash777u")
+            }
           >
             <FaGithub size={48} color="#67686b" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/yogesh-kumar-83bb891bb/"
-            target="_blank"
-            rel="noopener noreferrer"
+          </button>
+          <button
             className="social-btn"
-            onClick={handleLinkClick}
+            onClick={() =>
+              handleLinkClick(
+                "https://www.linkedin.com/in/yogesh-kumar-83bb891bb/"
+              )
+            }
           >
-            <FaLinkedin size={48} color="#67686b"/>
-          </a>
+            <FaLinkedin size={48} color="#67686b" />
+          </button>
         </div>
 
-        {/* Button Links */}
+        {/* Button Link */}
         <div className="flex space-x-4 mt-4">
-          <a href="#" className="primary-btn" onClick={handleLinkClick}>
+          <button
+            className="primary-btn"
+            onClick={() =>
+              handleLinkClick("https://example.com/your-resume.pdf")
+            }
+          >
             Download Resume
-          </a>
+          </button>
         </div>
       </div>
     </div>

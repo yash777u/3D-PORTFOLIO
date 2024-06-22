@@ -15,6 +15,8 @@ import ProjectImg3 from "../assets/projects/python.png";
 import ProjectImg4 from "../assets/projects/window11.png";
 import Experience from "./pages/Experince/Experince.jsx";
 import Certificate from "./pages/Certificates/Certificate.jsx";
+import Education from "./Education/Education.jsx";
+import ContactUs from "./pages/contactUs/Contactus.jsx";
 
 const ProjectData = [
   {
@@ -55,29 +57,36 @@ function MyBook(props) {
         <FirstPage />
       </Page>
       <Page number={3}>
-        <Skills />
-      </Page>
-      <Page number={4}>
-        <Experience />
-      </Page>
-      <Page number={5}>
-        <Services />
-      </Page>
-      <Page number={6}>
-        <Certificate />
-      </Page>
-      <Page number={7}>
         <About />
       </Page>
-      <Page number={8}>
+      <Page number={4}>
+        <Skills />
+      </Page>
+      <Page number={5}>
         <Projects ProjectData={ProjectData} />
       </Page>
-      <Page number={9}>
+      <Page number={6}>
         <Projects ProjectData={ProjectData2} />
       </Page>
+      <Page number={7}>
+        <Services />
+      </Page>
+      <Page number={8}>
+        <Education />
+      </Page>
+      <Page number={9}>
+        <Experience />
+      </Page>
       <Page number={10}>
+        <Certificate />
+      </Page>
+      <Page number={11}>
+        <ContactUs />
+      </Page>
+      <Page number={12}>
         <Cover coverImg={EndImg} title="" />
       </Page>
+
     </HTMLFlipBook>
   );
 }

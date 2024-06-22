@@ -8,7 +8,7 @@ const Projects = ({ ProjectData }) => {
       {/* heading */}
       <Heading
         title="Projects"
-        subtitle="Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet."
+        subtitle=""
       />
 
       {/* Project section  */}
