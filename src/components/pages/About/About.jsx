@@ -6,7 +6,8 @@ import { FaLinkedin } from "react-icons/fa";
 import Heading from "../../HelperComp/Heading";
 
 const About = () => {
-  const handleLinkClick = (url) => {
+  const handleLinkClick = (url, e) => {
+    e.preventDefault();
     window.open(url, "_blank");
   };
 
@@ -35,33 +36,34 @@ const About = () => {
         <div className="flex space-x-4 mt-10">
           <button
             className="social-btn"
-            onClick={() =>
-              handleLinkClick("https://leetcode.com/u/yash777u/")
+            onClick={(e) =>
+              handleLinkClick("https://leetcode.com/u/yash777u/", e)
             }
           >
             <SiLeetcode size={55} color="#67686b" />
           </button>
           <button
             className="social-btn"
-            onClick={() =>
-              handleLinkClick("https://x.com/yogesh_kumar_02")
+            onClick={(e) =>
+              handleLinkClick("https://x.com/yogesh_kumar_02", e)
             }
           >
             <BsTwitterX size={48} color="#67686b" />
           </button>
           <button
             className="social-btn"
-            onClick={() =>
-              handleLinkClick("https://github.com/yash777u")
+            onClick={(e) =>
+              handleLinkClick("https://github.com/yash777u", e)
             }
           >
             <FaGithub size={48} color="#67686b" />
           </button>
           <button
             className="social-btn"
-            onClick={() =>
+            onClick={(e) =>
               handleLinkClick(
-                "https://www.linkedin.com/in/yogesh-kumar-83bb891bb/"
+                "https://www.linkedin.com/in/yogesh-kumar-83bb891bb/",
+                e
               )
             }
           >
@@ -73,8 +75,8 @@ const About = () => {
         <div className="flex space-x-4 mt-4">
           <button
             className="primary-btn"
-            onClick={() =>
-              handleLinkClick("https://example.com/your-resume.pdf")
+            onClick={(e) =>
+              handleLinkClick("https://example.com/your-resume.pdf", e)
             }
           >
             Download Resume

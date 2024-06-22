@@ -1,6 +1,7 @@
 import React from "react";
 import MyBook from "./components/MyBook";
 import BgTexture from "./assets/brown-wooden-flooring.jpg";
+import { Analytics } from "@vercel/analytics/react"
 
 const BgTextureStyle = {
   backgroundImage: `url(${BgTexture})`,
